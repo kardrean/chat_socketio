@@ -18,10 +18,10 @@ io.on('connection', (socket) => {
     })
 })
 
-let counter = 0
-setInterval(() => {
-    io.to('contador').emit('msg', counter++)
-},1000)
+//let counter = 0
+//setInterval(() => {
+//    io.to('contador').emit('msg', counter++)
+//},1000)
 
 http.listen(3355, function () {
     console.log('RODANDO NA PORTA 3355')
